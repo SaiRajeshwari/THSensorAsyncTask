@@ -19,13 +19,13 @@
         android:textColor="@color/white"
         android:textSize="@dimen/font_large"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textStyle="bold"/>
 
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:layout_gravity="left">
         <TableRow android:layout_marginTop="10dp">
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_width="65dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-                android:padding="5dp"
+                android:padding="2dp"
                 tools:text="90 F"/>
         </TableRow>
         <TableRow android:layout_marginTop="8dp">
@@ -58,7 +58,7 @@
                 android:layout_width="65dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-                android:padding="5dp"
+                android:padding="2dp"
                 tools:text="60%"/>
         </TableRow>
         <TableRow android:layout_marginTop="8dp">
@@ -75,10 +75,10 @@
                 android:layout_width="65dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="15dp"
-                android:padding="5dp"
+                android:padding="2dp"
                 tools:text="231"/>
         </TableRow>
-        <TableRow android:layout_marginTop="25dp">
+        <TableRow android:layout_marginTop="22dp">
             <TextView
                 android:text="@string/number_of_readings"
                 android:textColor="@color/white"
@@ -92,7 +92,7 @@
                 android:layout_width="65dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="15dp"
-                android:padding="5dp"
+                android:padding="2dp"
                 android:layout_gravity="center_vertical"
                 tools:text="20"/>
         </TableRow>
@@ -101,10 +101,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:layout_gravity="center">
         <Button
+            android:id="@+id/generate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/generate"
@@ -114,6 +115,7 @@
             android:paddingLeft="25dp"
             android:paddingRight="25dp"/>
         <Button
+            android:id="@+id/cancel"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -135,6 +137,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ListView
+            android:divider="@null"
+            android:dividerHeight="0dp"
             android:id="@+id/list_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

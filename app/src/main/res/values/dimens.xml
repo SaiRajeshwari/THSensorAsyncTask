@@ -4,6 +4,6 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="font_large">30dp</dimen>
-    <dimen name="font_medium">20dp</dimen>
+    <dimen name="font_medium">18dp</dimen>
     <dimen name="font_small">10dp</dimen>
 </resources>
